@@ -34,6 +34,20 @@ The script "down" removes our database container:
 1.docker-compose -f docker/heroes/docker-compose.yml down
 ```
 
+## My Hardware Specs
+
+### CPU
+
+```
+Intel(R) Core(TM) i7-1165G7 @ 2.80GHz (4 cores, 8 threads)
+```
+
+### RAM
+
+```
+32 GB
+```
+
 ## Vanilla Spring Boot with JDBC
 
 ### 10 Concurrent Connections, 10000 Requests
