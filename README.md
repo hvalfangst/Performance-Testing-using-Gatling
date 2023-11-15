@@ -199,3 +199,77 @@ Statistics        Avg      Stdev        Max
     others - 0
   Throughput:     2.22MB/s
  ```
+
+## Golang Gin with Bun
+
+### 10 Concurrent Connections, 10000 Requests
+```plaintext
+Command: bombardier -m GET localhost:8080/heroes/1 -c 10 -n 10000
+Statistics        Avg      Stdev        Max
+  Reqs/sec       908.54     262.00    1729.76
+  Latency       11.03ms     9.70ms    91.43ms
+  HTTP codes:
+    1xx - 0, 2xx - 10000, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:   665.95KB/s
+ ```
+
+### 50 Concurrent Connections, 10000 Requests
+```plaintext
+Command: bombardier -m GET localhost:8080/heroes/1 -c 50 -n 10000
+Statistics        Avg      Stdev        Max
+  Reqs/sec       844.80     484.33    4062.98
+  Latency       62.80ms    49.06ms   265.43ms
+  HTTP codes:
+    1xx - 0, 2xx - 10000, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:   583.94KB/s
+ ```
+
+### 100 Concurrent Connections, 10000 Requests
+```plaintext
+Command: bombardier -m GET localhost:8080/heroes/1 -c 100 -n 10000
+Statistics        Avg      Stdev        Max
+  Reqs/sec      2823.61    1693.89    7586.94
+  Latency       35.68ms    35.69ms   329.06ms
+  HTTP codes:
+    1xx - 0, 2xx - 10000, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:     1.97MB/s
+ ```
+
+### 250 Concurrent Connections, 10000 Requests
+```plaintext
+Command: bombardier -m GET localhost:8080/heroes/1 -c 250 -n 10000
+Statistics        Avg      Stdev        Max
+  Reqs/sec      3662.85    2296.23   12146.79
+  Latency       70.79ms    54.21ms   461.63ms
+  HTTP codes:
+    1xx - 0, 2xx - 10000, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:     2.50MB/s
+ ```
+
+### 500 Concurrent Connections, 10000 Requests
+```plaintext
+Command: bombardier -m GET localhost:8080/heroes/1 -c 500 -n 10000
+Statistics        Avg      Stdev        Max
+  Reqs/sec      3652.13    2302.18   11292.50
+  Latency      135.97ms   105.69ms      0.92s
+  HTTP codes:
+    1xx - 0, 2xx - 10000, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:     2.57MB/s
+ ```
+
+### 2500 Concurrent Connections, 25000 Requests
+```plaintext
+Command: bombardier -m GET localhost:8080/heroes/1 -c 2500 -n 25000
+Statistics        Avg      Stdev        Max
+  Reqs/sec      3998.95    2770.36   16837.75
+  Latency      658.39ms   473.92ms      4.08s
+  HTTP codes:
+    1xx - 0, 2xx - 25000, 3xx - 0, 4xx - 0, 5xx - 0
+    others - 0
+  Throughput:     2.66MB/s
+ ```
