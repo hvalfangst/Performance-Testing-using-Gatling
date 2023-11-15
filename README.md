@@ -13,6 +13,7 @@ This has been implemented in order to mitigate caching.
 * [Docker](https://www.docker.com/products/docker-desktop/)
 * [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 * [Maven](https://maven.apache.org/)
+* [Golang](https://go.dev/)
 
 
 ## Startup
