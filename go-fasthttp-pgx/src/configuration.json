@@ -1,0 +1,7 @@
+{
+  "db": {
+    "data_source_name": "postgresql://MP77:IDecreeAndDeclareWarOnShitePerformance@localhost:5434/heroes_db?sslmode=disable",
+    "min_conns": 10,
+    "max_conns": 40
+  }
+}
